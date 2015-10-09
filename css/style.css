@@ -1,0 +1,37 @@
+
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+body {
+    color: white;
+    font font-size: 24px;
+    text-align: center;
+    background-image: url("http://media.giphy.com/media/capVWro9Ytyhy/giphy.gif");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+img {
+
+    float: bottom; left;
+}
+
+
+.btn,.btn:hover,.btn:active{
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}

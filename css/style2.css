@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+nav{
+    height:2.5em;
+    background:#68A79C;
+    width:100%;
+    margin:0;
+    color: white;
+
+    padding:.2em 0 .2em 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    display: table;
+    table-layout: fixed;
+    vertical-align: middle;
+}
+.nav > div{
+    display: table-cell;
+    width: 100%;
+    position: relative;
+
+}
+.nav > div:nth-child(2){
+    text-align: center;
+}
+.nav > div:last-child{
+    text-align: right;
+}
+
+
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+body{background: rgba(255, 252, 226, 0.5);
+}
+.fa-line-chart{
+    color:white;
+    padding-left: 2%;
+    vertical-align: super !important;
+
+    cursor:pointer;
+}
+a {
+    color:white;
+}
+.logo{
+    position: relative;
+    width:60px;
+    height:30px;
+}
+.genre{
+    padding-right:.5em;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+
+
+.intro{
+    height:97%;
+    z-index: 1;
+    padding: 3em 0;
+}
+.intro .image{
+    width: 25%;
+    margin:0 auto;
+    display: block;
+}
+
+.intro h1{
+    font-family: 'Abril Fatface', cursive;
+    margin: 0 auto;
+    display: block;
+    width:50%;
+    padding-bottom: 2%;
+    color:#111;
+    text-align: center;
+  font-size: 6em;
+}
+
+
+/* topmovies */
+.topmovies{
+    position:fixed;
+    top:2.5em;
+    background:#8C7662;
+    height:0%;
+    width:0%;
+
+    z-index: 1000;
+    opacity: 0;
+
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+
+
+    overflow-y: auto;
+}
+.toggletopmovies{
+position:fixed;
+    top:2.5em;
+    background:#8C7662;
+    height:97%;
+
+    width:40%;
+    z-index: 1000;
+    opacity: .98;
+
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.genres{
+     position:fixed;
+     top:2.5em;
+     right:0;
+     background:#8C7662;
+     height:0%;
+     width:0%;
+
+
+     z-index: 1000;
+     opacity: 0;
+
+     -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+
+    overflow-x: auto;
+
+ }
+
+.togglegenres{
+    position:fixed;
+    top:2.5em;
+    right:0;
+    background:#8C7662;
+    height:97%;
+    width:40%;
+    z-index: 1000;
+
+    opacity: .98;
+
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+.filmimg {
+    width:70%;
+    position:relative ;
+
+}
+.movie{
+    padding:0.7em;
+
+    color:white;
+
+    border-bottom:1px solid rgba(255,255,255,0.5);
+
+}
+.title{
+    float:left;
+}
+.text{
+    float:right;
+    text-align: left;
+}
+.left{
+    width:25%;
+    float:left;
+    vertical-align: middle;
+
+}
+.right{
+    width:75%;
+    float: right;
+
+}
+.clear{
+    clear:both;
+}
+#topmovies::-webkit-scrollbar {
+    width: 5px;
+    background:transparent;
+    border-radius:16px;
+}
+
+#topmovies::-webkit-scrollbar-track {
+
+    background:transparent;
+}
+
+#topmovies::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius:16px;
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(150,148,150,1);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(150,148,150,1);
+    box-shadow: inset 0px 0px 1px 1px rgba(150,148,150,1);
+
+}
+.container{
+
+    width:90%;
+    margin: 0 5% 5% 5%;
+}
+.head{
+    padding: 2% 0 2% 0%;
+    border-bottom: 10px solid rgba(255,255,255,0.5);
+}
+.head img{
+    display: inline-block;
+    width:calc(100%/5 - 20px);
+    margin-right: 1em;
+    position: relative;
+}
+@media screen and (max-width:368px){
+    .intro h1{ font-size: 2em; width: 60%;}
+
+    .toggletopmovies{
+        width:100%;
+    }
+}
+@media screen and (max-width:768px){
+    .intro h1{ font-size: 2em; width: 60%;}
+
+    .toggletopmovies{
+        width:100%;
+    }
+}
+@media screen and (max-width:1068px){
+    .intro h1{ font-size: 3em; width: 60%;}
+
+    .toggletopmovies{
+        width:100%;
+    }
+    .genres{
+        width:100%;
+    }
+}
+.fa-lg{
+    margin:0 10px;
+}
